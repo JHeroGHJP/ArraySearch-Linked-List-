@@ -6,7 +6,10 @@
 
 void main()
 {
+    srand (time (NULL));
+    
     int elementos;
+    int buscado;
     
     struct no *lista;
     lista = NULL;
@@ -16,6 +19,21 @@ void main()
     
     for (int i = 0; i < elementos; i++)
     {
-        inserir (lista, rand()%elementos);
+        lista = inserir (lista, rand()%elementos);
     }
+    
+    mostrar (lista);
+    
+    printf ("Insira um número para ser buscado na lista: ");
+    scanf ("%i", &buscado);
+    
+    buscaSequencial (lista, buscado);
+    
+    /*
+    bubbleSort (lista, elementos);
+    
+    mostrar (lista);
+    
+    buscaBinaria (lista, buscado, elementos);
+    */
 }
