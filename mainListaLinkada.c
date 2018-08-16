@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "biblio.h"
+#include "biblioLinkada.h"
 
 void main()
 {

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "biblio.h"
+#include "biblioLinkada.h"
 
 void bubbleSort (struct no *lista, int tamanho)
 {
